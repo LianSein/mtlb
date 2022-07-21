@@ -63,7 +63,7 @@ class TgUploader:
 
     def __upload_file(self, up_path, file_, dirpath):
         # print full path file location +
-        keption = self
+        keption = dirpath
         if not keption.endswith('/'): keption = keption + '/'
         if not keption.startswith('/'): keption = '/' + keption
         keption = up_path.replace(keption, '', 1)
