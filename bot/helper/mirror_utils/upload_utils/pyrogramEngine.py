@@ -66,7 +66,7 @@ class TgUploader:
         keption = file_
         if not keption.endswith('/'): keption = keption + '/'
         if not keption.startswith('/'): keption = '/' + keption
-        keption = file_.replace(keption, '', 1)
+        keption = up_path.replace(keption, '', 1)
         zoy = keption.split('/')[0]
         keption = keption.replace(zoy, '', 1)
         if keption.startswith('/'): keption = keption.replace('/', '', 1)
